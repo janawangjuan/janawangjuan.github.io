@@ -29,7 +29,7 @@
 异步和服务器交互（AJAX）
 服务端开服（node.js）1.2浏览器的工作原理    1、User Interface  用户界面，我们所看到的浏览器  2、Browser engine 浏览器引擎，用来查询和操作渲">
 <meta property="og:image" content="http://yoursite.com/images/1.png">
-<meta property="og:updated_time" content="2017-01-22T14:13:44.230Z">
+<meta property="og:updated_time" content="2017-01-25T02:53:34.733Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WANG">
 <meta name="twitter:description" content="#JS基本知识了解[TOC]
@@ -258,11 +258,48 @@
 * true:除0、something、object为true
 * false: false、“”、undefined、null、转换时都为false
 * if()判断时，会把内容值强行转换成booleab类型
-</code></pre><h2 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h2><p>第4章 数据类型转换<br>一、转换成字符串类型<br>二、转换成数值类型<br>三、转换成布尔类型<br>4.1    任何简单类型转换成String（三种方法）<br>4.1.1    变量+“”   或者     变量+“abc”<br>4.1.2    String(变量)<br>4.1.3    变量.toSting()     注意：undefined和null不可以<br>Null和undefined无toString方法。<br>4.2    任何简单类型转换成Number<br>此转换容易产生NaN，一旦被转换的变量中含有非数字字符，都容易出现NaN<br>4.2.1    变量-<em>/一个数字（有非数字字符会出现NaN）<br>例：var  num1  = “11”- 0;  var num2 =“11”</em> 1;var num =“11”/1;<br>JS底层做了一个强制类型转换，把字符串转换成了Number进行运算。<br>4.2.2    Number(变量)（有非数字字符会出现NaN）<br>var num1 = Number(“18”);        把字符变成了数字。<br>var num2 = Number(“18.99”);   结果为18.99数字型。（有小数也转换）<br>4.2.3    parseInt()和parseFloat()（译为取整和取浮点数）<br>空字符串parseInt()和parseFloat()返回NaN，Number(“”)返回0<br>parseInt(变量)：如果变量中收割字符为字母则结果为NaN。<br>否则取出现首个非数字前的整数。<br>123 = parseInt(“123.123aaaa”);</p>
-<p>parseFloat(变量)：如果变量中收割字符为字母则结果为NaN。<br>否则取出现首个非数字前的浮点数。（没有小数取整）<br>123.123 = parseFloat(“123.123aaaa”);<br>4.2.4    提别提示<br>Boolean类型中：true数值为1；false为0；<br>null的数值类型为0；<br>undefined无数值类型或者为NaN;<br>4.3    任何简单类型转换成Boolean<br>任何数据类型都可以转换成boolean类型，所以和遗忘两个转换不同；<br>4.3.1    Boolean(变量)<br>var bool = Boolean(“1111”);            bool为true；<br>4.3.2    ！！变量<br>第一个逻辑非操作会基于无论什么操作数返回一个与之相反的布尔值<br>第二个逻辑非操作则对该布尔值求反<br>于是就得到了这个值真正对应的布尔值<br>第5章 操作符<br>主要研究操作符的种类以及优先级。<br>案例学习。<br>5.1    操作符种类<br>一、算数运算符（+—<em>/…）<br>a)    一元运算符：正号、负号、++、–、平方等一个变量就能运算<br>b)    二元运算符：+-</em>/%等两个变量才能运算<br>c)    三元运算符：    值1？值2：值3；<br>二、逻辑运算符（ |&amp; ! ）（或且非）<br>三、比较运算符（&lt;、&gt;、==、&gt;=…）<br>四、赋值运算符（=、+=、-=、<em>=、/=、%=）<br>5.2    优先级<br>1 ()<br>2 !、-（负数）、++、– （正数省略+）（一元运算）<br>3 </em>、/、%<br>4 +、- （加，减）（二元运算）<br>5 &lt;、&lt;=、&lt;、&gt;= （一级逻辑运算）<br>6 ==、!=、===、!==、 （二级逻辑运算）<br>7 &amp;&amp; （三级级逻辑运算）<br>8 ||<br>9?: （三元运算）<br>10 =、+=、-=、*=、/=、%= （赋值运算）<br>5.3    &amp;&amp;和||运算（短路运算）<br>5.3.1    &amp;&amp;链接两个boolean类型，有一个是false结果就是false。<br>链接值不是布尔类型时，按照成布尔类型计算，结果本身不变。（非布尔）<br>如果不是boolean类型值，会按照对应的布尔类型之计算，然后返回的值不变。<br>例子：    1 = 2&amp;&amp;1；      0 = 0 &amp;&amp; 1；   都是true取后面，都是false取前面。<br>5.3.2    ||链接两个boolean类型，有一个是true结果就是true。<br>链接值不是布尔类型时，按照成布尔类型计算，结果本身不变。（非布尔）<br>如果不是boolean类型值，会按照对应的布尔类型之计算，然后返回的值不变。</p>
-<p>例子：    2= 2||1；      1 = 0 || 1；   都是true取前面，都是false取后面。</p>
-<p>var obj  =  document.body.scrollTop  ||  document.documentElement.scrollTop;</p>
-<p>第6章 流程控制<br>一、顺序结构（程序正常执行流程从上往下，从左往右）（不用研究）<br>赋值运算时为从右往左执行，且左侧为属性或变量，不取值！！！<br>二、选择结构<br>a)    If语句<br>b)    Switch语句<br>三、循环结构<br>a)    for循环<br>b)    while循环<br>c)    do…while循环<br>6.1    循序结构<br>程序正常执行顺序不必过多研究，特殊需求，后续老师特殊讲解。<br>6.2    选择结构<br>共有两种，if语句和switch语句。If常用，switch为特殊情况使用，判断条件出现的情况特别多的时候用switch，其他时候if语句比较方便。<br>6.2.1    If语句<br>一、If语句用法有三种<br>1．if(条件1){程序1}<br>2．if(条件1){程序1}else{程序2}<br>3．if(条件1){程序1}else if(条件2){程序2}…else{程序n}<br>二、三目运算（也叫三元运算）（目或者元代表几个表达式）<br>三目运算可以替代部分if…else…功能，运算简单，使用方便，代码清晰。<br>表达式1？值1：值2<br>6.2.2    Switch语句<br>switch (值1) {<br>    case value1:<br>        程序1；<br>        break; // break 关键字会导致代码执行流跳出 switch 语句<br>    case value2:<br>        程序2；<br>        break;<br>    default:<br>        程序3；<br>}<br>注意：<br>break可以省略，如果省略，代码会继续执行下一个case<br>switch 语句在比较值时使用的是全等操作符，因此不会发生类型转换<br>（例如，字符串 “10” 不等于数值 10）。<br>6.2.3    案例：（可以用if语句实现，下去可以自己练习）<br>1.判断当天是星期几<br>2.把百分制转换成优良中可差<br>6.3    循环结构<br>共3种，for/while/do…while；可根据需求选择使用；<br>1．遍历数组首选for循环，简单循环使用for。<br>2．而while循环强调，不记循环次数（不知道循环多少次），首选while。<br>3．最后do…while循环强调，无论怎样，至少执行一次是，使用do…while。<br>6.3.1    for循环<br>1)    执行流程<br>for (变量;条件1;条件2){ 执行程序 }<br>执行过程：变量-&gt;条件1-&gt;执行程序-&gt;条件2-&gt;条件1-&gt;执行程序…..<br>直到条件1不成立，跳出循环。<br>2)    三个表达式均为可选，但是必须写分号！！！<br>for(;;){程序}      死循环;<br>3)    案例1<br>     6个简单案例，用来体验for循环如何使用。（利息和数列提升思维）<br>4)    案例2<br>九九乘法表</p>
+</code></pre><h2 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h2><h3 id="任何简单类型都可转换成String"><a href="#任何简单类型都可转换成String" class="headerlink" title="任何简单类型都可转换成String"></a>任何简单类型都可转换成String</h3><pre><code>* 1、通过+运算，加好充当链接符号，实现隐式转换
+* 2、String(变量)，
+* 3、变量.toString()  注意：undefined和null不可以转换，即没有toString 方法
+</code></pre><h4 id="任何简单类型转换成Number"><a href="#任何简单类型转换成Number" class="headerlink" title="任何简单类型转换成Number"></a>任何简单类型转换成Number</h4><pre><code>* 通过* / - 运算转换成Number，注意，一单别转换的变量中含有非数字字符，容易出现NaN 
+*Number(变量)当出现非数字字符串时，会转换成NaN 
+* parseInt()和parseFloat(),parseInt转换会保存整数部分，小树部分删除，Float会同时保存小树部分，
+</code></pre><h4 id="任何简单类型转换成Boolean类型"><a href="#任何简单类型转换成Boolean类型" class="headerlink" title="任何简单类型转换成Boolean类型"></a>任何简单类型转换成Boolean类型</h4><pre><code>* 第一种：通过构造函数，Boolean(变量)。注意：0代表false，1代表true.
+* 0,false,null,undefined,&quot;&quot;,代表的是false.其他都为true.
+* if()，括号中的内容会转换成Booolean类型
+* 第二种：两次取反也可获得，BOOlean 类型。！！11；
+</code></pre><h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><h3 id="操作符的种类："><a href="#操作符的种类：" class="headerlink" title="操作符的种类："></a>操作符的种类：</h3><h4 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h4><pre><code>* 一元运算符：正号、负号、++、--、平方等一个变量就能运算
+* 二元运算符：+ - * / 等两个变量才能运算
+* 三元运算符：值1？值2：值3
+</code></pre><h4 id="逻辑运算符（-amp-amp-）（或且非）"><a href="#逻辑运算符（-amp-amp-）（或且非）" class="headerlink" title="逻辑运算符（|| &amp;&amp; !）（或且非）"></a>逻辑运算符（|| &amp;&amp; !）（或且非）</h4><h4 id="比较运算符（-lt-、-gt-、-、-gt-、-lt-）"><a href="#比较运算符（-lt-、-gt-、-、-gt-、-lt-）" class="headerlink" title="比较运算符（&lt;、&gt;、==、&gt;=、&lt;=）"></a>比较运算符（&lt;、&gt;、==、&gt;=、&lt;=）</h4><h4 id="赋值运算符（-、-、-、-、-）"><a href="#赋值运算符（-、-、-、-、-）" class="headerlink" title="赋值运算符（=、+=、-=、*=、/=）"></a>赋值运算符（=、+=、-=、*=、/=）</h4><h3 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h3><pre><code>* 1、（）
+* 2、！、-（负数）、++、--、+（正数）、
+* 3、*、/、%、
+* 4、+、-
+* 5、 &lt;、&lt;=、&lt;、&gt;= （一级逻辑运算）
+* 6、==、!=、===、!==、 （二级逻辑运算）
+* 7、&amp;&amp; （三级级逻辑运算）
+* 8、||
+* 9、值1？值二：值三（三元运算符）
+* 10、 =、+=、-=、*=、/=、%= （赋值运算）
+</code></pre><h3 id="amp-amp-和-短路路运算）"><a href="#amp-amp-和-短路路运算）" class="headerlink" title="&amp;&amp;和||短路路运算）"></a>&amp;&amp;和||短路路运算）</h3><pre><code>* &amp;&amp;链接两个Boolean类型，有一个是false结果就是false.&amp;&amp;寻找false
+* ||链接两个boolean类型，有一个是true就是true，找到一个true,就停止寻找
+</code></pre><h2 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h2><h3 id="顺序结构（程序正常执行流程从上往下、从左往右）"><a href="#顺序结构（程序正常执行流程从上往下、从左往右）" class="headerlink" title="顺序结构（程序正常执行流程从上往下、从左往右）"></a>顺序结构（程序正常执行流程从上往下、从左往右）</h3><pre><code>* 赋值运算时为从右往左，且左侧为属性或变量，不取值！！！
+</code></pre><h3 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a>选择结构</h3><blockquote>
+<p>共有两种，if语句和switch语句。If常用，switch为特殊情况使用，判断条件出现的情况特别多的时候用switch，其他时候if语句比较方便。</p>
+</blockquote>
+<ul>
+<li>if语句</li>
+<li>Switch语句</li>
+</ul>
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><pre><code>* for循环
+* while循环
+* do    while循环
+* 
+</code></pre><h4 id="if语句用法"><a href="#if语句用法" class="headerlink" title="if语句用法"></a>if语句用法</h4><pre><code>* if。。。else注意：if  else可以相互嵌套
+* 三元运算符可以部分替代if语句
+</code></pre><h4 id="Switch语句"><a href="#Switch语句" class="headerlink" title="Switch语句"></a>Switch语句</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">switch (值1) &#123;</div><div class="line">    case value1: </div><div class="line">        程序1；</div><div class="line">        break; // break 关键字会导致代码执行流跳出 switch 语句</div><div class="line">    case value2: </div><div class="line">        程序2；</div><div class="line">        break;</div><div class="line">    default: </div><div class="line">        程序3；</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<pre><code>* 注意：break可以省略，如果省略，代码会继续执行下一个case.switch 语句在比较值时使用的是全等操作符，因此不会发生类型转换
+</code></pre><p>6.2.3    案例：（可以用if语句实现，下去可以自己练习）<br>1.判断当天是星期几<br>2.把百分制转换成优良中可差<br>6.3    循环结构<br>共3种，for/while/do…while；可根据需求选择使用；<br>1．遍历数组首选for循环，简单循环使用for。<br>2．而while循环强调，不记循环次数（不知道循环多少次），首选while。<br>3．最后do…while循环强调，无论怎样，至少执行一次是，使用do…while。<br>6.3.1    for循环<br>1)    执行流程<br>for (变量;条件1;条件2){ 执行程序 }<br>执行过程：变量-&gt;条件1-&gt;执行程序-&gt;条件2-&gt;条件1-&gt;执行程序…..<br>直到条件1不成立，跳出循环。<br>2)    三个表达式均为可选，但是必须写分号！！！<br>for(;;){程序}      死循环;<br>3)    案例1<br>     6个简单案例，用来体验for循环如何使用。（利息和数列提升思维）<br>4)    案例2<br>九九乘法表</p>
 
       
 
@@ -355,6 +392,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/02/16/html5 基础知识介绍/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
   
     <a href="/2017/01/19/04.H5新语义标签兼容性/" id="article-nav-older" class="article-nav-link-wrap">

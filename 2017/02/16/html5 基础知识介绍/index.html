@@ -8,12 +8,52 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>WANG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="[TOC]
+html5 基础知识介绍DOCTYPE的作用
+一个标准的HTML文档,开头第一句都应该是&amp;lt;!DOCTYPE&amp;gt;,根据HTML版本的不同,写法上会有所差别.
+
+
+tips:
+DOCTYPE并不是HTML标签,而是一个声明
+作用是:告诉浏览器按照哪个规则去解析页面
+
+
+
+DOCTYPE写法_HTML4中
+在HTML4.01中有三种DOCTYPE声明,但是随着技术的发展,这几种写法">
+<meta property="og:type" content="article">
 <meta property="og:title" content="WANG">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/02/16/html5 基础知识介绍/index.html">
 <meta property="og:site_name" content="WANG">
+<meta property="og:description" content="[TOC]
+html5 基础知识介绍DOCTYPE的作用
+一个标准的HTML文档,开头第一句都应该是&amp;lt;!DOCTYPE&amp;gt;,根据HTML版本的不同,写法上会有所差别.
+
+
+tips:
+DOCTYPE并不是HTML标签,而是一个声明
+作用是:告诉浏览器按照哪个规则去解析页面
+
+
+
+DOCTYPE写法_HTML4中
+在HTML4.01中有三种DOCTYPE声明,但是随着技术的发展,这几种写法">
+<meta property="og:updated_time" content="2017-02-16T11:53:46.381Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WANG">
+<meta name="twitter:description" content="[TOC]
+html5 基础知识介绍DOCTYPE的作用
+一个标准的HTML文档,开头第一句都应该是&amp;lt;!DOCTYPE&amp;gt;,根据HTML版本的不同,写法上会有所差别.
+
+
+tips:
+DOCTYPE并不是HTML标签,而是一个声明
+作用是:告诉浏览器按照哪个规则去解析页面
+
+
+
+DOCTYPE写法_HTML4中
+在HTML4.01中有三种DOCTYPE声明,但是随着技术的发展,这几种写法">
   
     <link rel="alternative" href="/atom.xml" title="WANG" type="application/atom+xml">
   
@@ -149,9 +189,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-html5 基础知识介绍" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-html5 基础知识介绍" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
@@ -913,159 +951,26 @@
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/16/html5 基础知识介绍/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-JS基本知识了解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#JS基本知识了解<br>[TOC]</p>
-<p>##JS概述</p>
-<h3 id="1-1-JS作用"><a href="#1-1-JS作用" class="headerlink" title="1.1    JS作用"></a>1.1    JS作用</h3><ul>
-<li>验证表单（以前的网速较慢，在客户端实现验证更节省时间）</li>
-<li>页面特效（PC端的网页效果）</li>
-<li>移动端（web 和app）</li>
-<li>异步和服务器交互（AJAX）</li>
-<li>服务端开服（node.js）<h3 id="1-2浏览器的工作原理"><a href="#1-2浏览器的工作原理" class="headerlink" title="1.2浏览器的工作原理"></a>1.2浏览器的工作原理</h3>  <img src="images/1.png" alt="浏览器的工作原理图"><br>  1、User Interface  用户界面，我们所看到的浏览器<br>  2、Browser engine 浏览器引擎，用来查询和操作渲染引擎<br>  3、Rendering engine（渲染引擎） 用来显示请求的内容，负责解析HTML、CSS<br>  4、Networking 网络，负责发送网络请求<br>  5、JavaScript Interpreter(解析者) Javascript解析器，负责执行JavaScript的代码<br>  6、UI Backend UI后端，用来绘制雷系组合框和弹出窗口<br>  7、Data Presistence（持久化）数据持久化，数据存储cookie、HTML5中的seccionStorage<h3 id="1-3-弱类型、解释执行脚本语言"><a href="#1-3-弱类型、解释执行脚本语言" class="headerlink" title="1.3 弱类型、解释执行脚本语言"></a>1.3 弱类型、解释执行脚本语言</h3><blockquote>
-<p>脚本语言：弥补编译语言的不足而存在的，作为补充语言，不需要编译<br>解释执行：一行一行解析，解析一行执行一行。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="1-4-JS组成"><a href="#1-4-JS组成" class="headerlink" title="1.4 JS组成"></a>1.4 JS组成</h3><pre><code>* JS=ECMAScript +DOM +BOM +高级
-* ECMAScript：是JavaScript 的语法规范
-* DOM(document Object Model)文档对象模型，操作网页上元素的API
-* BOM（Browser Object Model）浏览器对象模型，操作浏览器部分功能的API
-</code></pre><h3 id="1-5-输出语句"><a href="#1-5-输出语句" class="headerlink" title="1.5 输出语句"></a>1.5 输出语句</h3><pre><code>* console.log(&quot;内容&quot;)在控制台打印内容
-* alert(&quot;内容&quot;)弹窗显示内容
-* document.write(&quot;内容&quot;)在页面上书写。该语句识别标签
-</code></pre><h3 id="1-6-引入方式"><a href="#1-6-引入方式" class="headerlink" title="1.6    引入方式"></a>1.6    引入方式</h3><pre><code>* 内嵌式，将JS代码写在&lt;script&gt;&lt;/script&gt;中
-* 外联式，将Js文件通过外联的方式引入，&lt;script src=&quot;&quot;&gt;&lt;/script&gt;注意：外联的script的标签里不能写任何代码，(实际开发中，多使用该方式引入)
-</code></pre><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则:"></a>命名规则:</h3><blockquote>
-<p>驼峰命名法（从第二个单词起，首字符大写。如：getElementById）</p>
-<pre><code>*  1、变量命名必须以字母或者下标&quot;&quot;_&quot;或者&apos;&apos;$&apos;为开头
-*  2、变量名长度不能超过255个字符
-*  3、变量名中不允许使用空格 
-*  4、不能使用脚本语言中保留的关键字以及保留符号作为变量名。
-*  5、变量名区分大小写
-*  6、不推荐使用汉语命名
-</code></pre></blockquote>
-<h3 id="变量使用"><a href="#变量使用" class="headerlink" title="变量使用"></a>变量使用</h3><blockquote>
-<p>定义变量时，尽量不要跨越类型给同一个变量赋值。在强类型语言中，跨越类型定义变量会报错</p>
-<pre><code>* 例如： var n1=&apos;aaa&apos;;n1=99;
-</code></pre><h3 id="交换变量"><a href="#交换变量" class="headerlink" title="交换变量"></a>交换变量</h3><ul>
-<li>通过第三方交换，temp;<ul>
-<li>定义一个中间变量，存放即将被修改的值，</li>
-<li>再把中间变量存放的值赋给交换的变量</li>
-</ul>
-</li>
-<li>通过求和的方式，交换变量<ul>
-<li>先求和，用和减去其中一个，赋值给另一个，最后再用和减去另一个赋值给剩下的一个<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="1-1-数据类型划分"><a href="#1-1-数据类型划分" class="headerlink" title="1.1 数据类型划分"></a>1.1 数据类型划分</h3>简单数据类型和复杂数据类型</li>
-</ul>
-</li>
-<li>简单数据类型：字符串(string)、数字(Number)、布尔(Boolean)、未定义(undefined)</li>
-<li>复杂数据类型：Object、function、Array、Date、RegExp、Error<h3 id="字面量："><a href="#字面量：" class="headerlink" title="字面量："></a>字面量：</h3>固定的值，让你从‘从字面上’表现的值</li>
-</ul>
-</blockquote>
-<h4 id="Number-数字类型"><a href="#Number-数字类型" class="headerlink" title="Number(数字类型)"></a>Number(数字类型)</h4><pre><code>* 进制：进制包括2进制、8进制（011）、10进制、16进制（0xa）、32进制等....
-* 浮点数：容易出现精度丢失问题，所以不判断计算后的两个浮点数是否相等
-</code></pre><h5 id="数值范围（由于内存的限制，ECMAScript-并不能保存世界上所有的数值）"><a href="#数值范围（由于内存的限制，ECMAScript-并不能保存世界上所有的数值）" class="headerlink" title="数值范围（由于内存的限制，ECMAScript 并不能保存世界上所有的数值）"></a>数值范围（由于内存的限制，ECMAScript 并不能保存世界上所有的数值）</h5><pre><code>* Number.MIN_VALUE,表示最小值
-* 最小值：Number.MIN_VALUE，这个值为： 5e-324
-* 最大值：Number.MAX_VALUE，这个值为： 1.7976931348623157e+308
-* 无穷大：Infinity（0做除数时，为无穷大）
-</code></pre><h5 id="undefined与null的区别"><a href="#undefined与null的区别" class="headerlink" title="undefined与null的区别"></a>undefined与null的区别</h5><blockquote>
-<p>null和undefined有很大的相似型。null==undefined的结果为true。但是unll===undefined的结果为false。注意：null+数字，结果为数字。但是undefined+数字，结果为NaN<br>任何数据类型和undefined结果为NaN<br>任何值和null运算，null可以看做与0运算</p>
-</blockquote>
-<h5 id="NaN-非数值Not-a-Number的简写"><a href="#NaN-非数值Not-a-Number的简写" class="headerlink" title="NaN (非数值Not a Number的简写)"></a>NaN (非数值Not a Number的简写)</h5><blockquote>
-<p>其类型Number 类型</p>
-<pre><code>* console.log(&quot;abs&quot;/18)===&gt;&gt;结果是NaN
-* undefined与任何数值计算都为NaN;NaN与任何值都不相等，包括他本身
-</code></pre></blockquote>
-<h5 id="isNaN-任何不能被转换为数值的值购汇导致这个函数返回true"><a href="#isNaN-任何不能被转换为数值的值购汇导致这个函数返回true" class="headerlink" title="isNaN():任何不能被转换为数值的值购汇导致这个函数返回true;"></a>isNaN():任何不能被转换为数值的值购汇导致这个函数返回true;</h5><pre><code>* isNaN(NaN);// true
-* isNaN(“blue”); // true
-* isNaN(123); // false
-</code></pre><h3 id="String-字符串类型"><a href="#String-字符串类型" class="headerlink" title="String(字符串类型)"></a>String(字符串类型)</h3><blockquote>
-<p>用引号时，可单引号也可双引号，但是不能一单一双。</p>
-</blockquote>
-<ul>
-<li><strong> 字符串拼接 </strong> ：如果两个变量都是字符串，“+变量+”。用加好拼接，同时加上双引号。</li>
-<li>转移字符：无法暑促的字符，先输出/,在输出字符。(“、\、换行等····”)</li>
-<li>字符串不可变：开辟空间存储变量时，内存中不会立刻消失，只能二次赋值。</li>
-</ul>
-<h3 id="Boolblean（布尔类型）"><a href="#Boolblean（布尔类型）" class="headerlink" title="Boolblean（布尔类型）"></a>Boolblean（布尔类型）</h3><pre><code>* Bollean类型有连个字面量：true和false.
-* 虽然Boolean 类型的字面值只有两个，但 ECMAScript 中所有类型的值都有与这两个 Boolean 值等价的值 
-* true:除0、something、object为true
-* false: false、“”、undefined、null、转换时都为false
-* if()判断时，会把内容值强行转换成booleab类型
-</code></pre><h2 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h2><h3 id="任何简单类型都可转换成String"><a href="#任何简单类型都可转换成String" class="headerlink" title="任何简单类型都可转换成String"></a>任何简单类型都可转换成String</h3><pre><code>* 1、通过+运算，加好充当链接符号，实现隐式转换
-* 2、String(变量)，
-* 3、变量.toString()  注意：undefined和null不可以转换，即没有toString 方法
-</code></pre><h4 id="任何简单类型转换成Number"><a href="#任何简单类型转换成Number" class="headerlink" title="任何简单类型转换成Number"></a>任何简单类型转换成Number</h4><pre><code>* 通过* / - 运算转换成Number，注意，一单别转换的变量中含有非数字字符，容易出现NaN 
-*Number(变量)当出现非数字字符串时，会转换成NaN 
-* parseInt()和parseFloat(),parseInt转换会保存整数部分，小树部分删除，Float会同时保存小树部分，
-</code></pre><h4 id="任何简单类型转换成Boolean类型"><a href="#任何简单类型转换成Boolean类型" class="headerlink" title="任何简单类型转换成Boolean类型"></a>任何简单类型转换成Boolean类型</h4><pre><code>* 第一种：通过构造函数，Boolean(变量)。注意：0代表false，1代表true.
-* 0,false,null,undefined,&quot;&quot;,代表的是false.其他都为true.
-* if()，括号中的内容会转换成Booolean类型
-* 第二种：两次取反也可获得，BOOlean 类型。！！11；
-</code></pre><h2 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h2><h3 id="操作符的种类："><a href="#操作符的种类：" class="headerlink" title="操作符的种类："></a>操作符的种类：</h3><h4 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h4><pre><code>* 一元运算符：正号、负号、++、--、平方等一个变量就能运算
-* 二元运算符：+ - * / 等两个变量才能运算
-* 三元运算符：值1？值2：值3
-</code></pre><h4 id="逻辑运算符（-amp-amp-）（或且非）"><a href="#逻辑运算符（-amp-amp-）（或且非）" class="headerlink" title="逻辑运算符（|| &amp;&amp; !）（或且非）"></a>逻辑运算符（|| &amp;&amp; !）（或且非）</h4><h4 id="比较运算符（-lt-、-gt-、-、-gt-、-lt-）"><a href="#比较运算符（-lt-、-gt-、-、-gt-、-lt-）" class="headerlink" title="比较运算符（&lt;、&gt;、==、&gt;=、&lt;=）"></a>比较运算符（&lt;、&gt;、==、&gt;=、&lt;=）</h4><h4 id="赋值运算符（-、-、-、-、-）"><a href="#赋值运算符（-、-、-、-、-）" class="headerlink" title="赋值运算符（=、+=、-=、*=、/=）"></a>赋值运算符（=、+=、-=、*=、/=）</h4><h3 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h3><pre><code>* 1、（）
-* 2、！、-（负数）、++、--、+（正数）、
-* 3、*、/、%、
-* 4、+、-
-* 5、 &lt;、&lt;=、&lt;、&gt;= （一级逻辑运算）
-* 6、==、!=、===、!==、 （二级逻辑运算）
-* 7、&amp;&amp; （三级级逻辑运算）
-* 8、||
-* 9、值1？值二：值三（三元运算符）
-* 10、 =、+=、-=、*=、/=、%= （赋值运算）
-</code></pre><h3 id="amp-amp-和-短路路运算）"><a href="#amp-amp-和-短路路运算）" class="headerlink" title="&amp;&amp;和||短路路运算）"></a>&amp;&amp;和||短路路运算）</h3><pre><code>* &amp;&amp;链接两个Boolean类型，有一个是false结果就是false.&amp;&amp;寻找false
-* ||链接两个boolean类型，有一个是true就是true，找到一个true,就停止寻找
-</code></pre><h2 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h2><h3 id="顺序结构（程序正常执行流程从上往下、从左往右）"><a href="#顺序结构（程序正常执行流程从上往下、从左往右）" class="headerlink" title="顺序结构（程序正常执行流程从上往下、从左往右）"></a>顺序结构（程序正常执行流程从上往下、从左往右）</h3><pre><code>* 赋值运算时为从右往左，且左侧为属性或变量，不取值！！！
-</code></pre><h3 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a>选择结构</h3><blockquote>
-<p>共有两种，if语句和switch语句。If常用，switch为特殊情况使用，判断条件出现的情况特别多的时候用switch，其他时候if语句比较方便。</p>
-</blockquote>
-<ul>
-<li>if语句</li>
-<li>Switch语句</li>
-</ul>
-<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><pre><code>* for循环
-* while循环
-* do    while循环
-* 
-</code></pre><h4 id="if语句用法"><a href="#if语句用法" class="headerlink" title="if语句用法"></a>if语句用法</h4><pre><code>* if。。。else注意：if  else可以相互嵌套
-* 三元运算符可以部分替代if语句
-</code></pre><h4 id="Switch语句"><a href="#Switch语句" class="headerlink" title="Switch语句"></a>Switch语句</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">switch (值1) &#123;</div><div class="line">    case value1: </div><div class="line">        程序1；</div><div class="line">        break; // break 关键字会导致代码执行流跳出 switch 语句</div><div class="line">    case value2: </div><div class="line">        程序2；</div><div class="line">        break;</div><div class="line">    default: </div><div class="line">        程序3；</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<pre><code>* 注意：break可以省略，如果省略，代码会继续执行下一个case.switch 语句在比较值时使用的是全等操作符，因此不会发生类型转换
-</code></pre><p>6.2.3    案例：（可以用if语句实现，下去可以自己练习）<br>1.判断当天是星期几<br>2.把百分制转换成优良中可差<br>6.3    循环结构<br>共3种，for/while/do…while；可根据需求选择使用；<br>1．遍历数组首选for循环，简单循环使用for。<br>2．而while循环强调，不记循环次数（不知道循环多少次），首选while。<br>3．最后do…while循环强调，无论怎样，至少执行一次是，使用do…while。<br>6.3.1    for循环<br>1)    执行流程<br>for (变量;条件1;条件2){ 执行程序 }<br>执行过程：变量-&gt;条件1-&gt;执行程序-&gt;条件2-&gt;条件1-&gt;执行程序…..<br>直到条件1不成立，跳出循环。<br>2)    三个表达式均为可选，但是必须写分号！！！<br>for(;;){程序}      死循环;<br>3)    案例1<br>     6个简单案例，用来体验for循环如何使用。（利息和数列提升思维）<br>4)    案例2<br>九九乘法表</p>
-
-      
-
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -1074,18 +979,74 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/01/21/JS基本知识了解/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/16/html5 基础知识介绍/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/01/21/JS基本知识了解/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
@@ -1093,282 +1054,10 @@
 
 
   
-    <article id="post-04.H5新语义标签兼容性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="H5新语义标签兼容性"><a href="#H5新语义标签兼容性" class="headerlink" title="H5新语义标签兼容性"></a>H5新语义标签兼容性</h1><p><img src="imgs/desk.jpg" alt="前端与移动开发学院"></p>
-<blockquote>
-<p>虽然HTML5为我们提供了很多一些新的语义标签,但老版本的浏览器并这些内容,比如<code>老式iE</code>就不支持新语义标签</p>
-</blockquote>
-<p>[TOC]</p>
-<h2 id="低版本IE显示问题"><a href="#低版本IE显示问题" class="headerlink" title="低版本IE显示问题"></a>低版本IE显示问题</h2><ul>
-<li>测试代码</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">        header&#123;</div><div class="line">            height: 100px;</div><div class="line">            background-color: orangered;</div><div class="line">        &#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
-<ul>
-<li><p><strong>低版本IE测试方式:</strong></p>
-<ul>
-<li>如果使用的是高版本的iE,比如<code>ie11</code>其内部能够调节ie的显示版本</li>
-<li>打开浏览器-&gt;F12呼出开发者界面-&gt;选择<code>仿真</code>-&gt;选择浏览器版本<br><img src="imgs/ie_test.gif" alt="ie_test.gif-593.1kB"></li>
-</ul>
-</li>
-<li><p><strong>测试效果:</strong></p>
-<ul>
-<li>在版本<code>小于等于ie8</code>时,<code>header</code>标签就无法显示</li>
-</ul>
-</li>
-</ul>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="js代码创建标签"><a href="#js代码创建标签" class="headerlink" title="js代码创建标签"></a><strong>js代码创建标签</strong></h3><ul>
-<li>在页面中添加创建<code>header</code>标签的代码</li>
-<li>修改header的样式,添加<code>display:block</code></li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">        header&#123;</div><div class="line">            height: 100px;</div><div class="line">            background-color: orangered;</div><div class="line">            /*在低版本的ie中,如果想要显示h5的新语义标签,需要设置为block*/</div><div class="line">            display: block;</div><div class="line">        &#125;   </div><div class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></div><div class="line">        // 使用代码创建header标签</div><div class="line">      document.createElement("header");</div><div class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--</span></div><div class="line">    在老版本的ie中无法查看(ie8)</div><div class="line">--&gt;</div><div class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="优化代码执行–hack写法"><a href="#优化代码执行–hack写法" class="headerlink" title="优化代码执行–hack写法"></a><strong>优化代码执行–hack写法</strong></h3><blockquote>
-<p>无论是js,或者js框架都需要执行js代码才能够解决兼容性问题,但是在高版本的浏览器中,那段js代码就没有必要执行了,所以我们通过一个叫做<a href="http://baike.baidu.com/link?url=-Ae_GC-RlJ0jJPuJlZY7O_pJPgam0H7t_XYKPGp_u7l4XI7Ic-JT1cmJPvJB1dgbOL-RG_vZflKWTIy0hNfW5_" target="_blank" rel="external">hack</a>的方式来减少性能的浪费</p>
-</blockquote>
-<ul>
-<li><strong>用法:</strong><ul>
-<li>使用 hack语法 将需要执行的js的代码包裹起来</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;!--[if lte IE 8]&gt;</div><div class="line">&lt;script&gt;</div><div class="line">    alert(&quot;这段js代码执行了&quot;);</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;![endif]--&gt;</div></pre></td></tr></table></figure>
-<ul>
-<li><strong>更多语法:</strong></li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"> <span class="comment">&lt;!--[if lte IE 7]&gt;</span></div><div class="line">    &lt;script&gt;</div><div class="line">        alert("这段js代码执行了");</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;![endif]--&gt;</div><div class="line"> IE7及IE7以下的IE6、IE5.x可识别</div><div class="line"> </div><div class="line"> <span class="comment">&lt;!--[if gte IE 7]&gt;</span></div><div class="line">    &lt;script&gt;</div><div class="line">        alert("这段js代码执行了");</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;![endif]--&gt;</div><div class="line"> IE7及IE7以上的IE8、IE9可识别</div><div class="line"> </div><div class="line"> <span class="comment">&lt;!--[if lt IE 7]&gt;</span></div><div class="line">    &lt;script&gt;</div><div class="line">        alert("这段js代码执行了");</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;![endif]--&gt;</div><div class="line"> IE7以下的IE6、IE5.x可识别  </div><div class="line"> </div><div class="line"> <span class="comment">&lt;!--[if gt IE 7]&gt;</span></div><div class="line">    &lt;script&gt;</div><div class="line">        alert("这段js代码执行了");</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;![endif]--&gt;</div><div class="line">IE7以上的IE8、IE9可识别</div><div class="line"> </div><div class="line"> <span class="comment">&lt;!--[if IE 7]&gt;</span></div><div class="line">    &lt;script&gt;</div><div class="line">        alert("这段js代码执行了");</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;![endif]--&gt;</div><div class="line"> 只有IE7可以识别</div></pre></td></tr></table></figure>
-<h3 id="js框架"><a href="#js框架" class="headerlink" title="js框架"></a>js框架</h3><ul>
-<li>直接导入js框架,js框架内部干的事情类似于我们刚刚写的js代码,但是处理的逻辑会多一些</li>
-<li><a href="https://github.com/aFarkas/html5shiv" target="_blank" rel="external">js框架”html5shiv”获取地址</a></li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">        header&#123;</div><div class="line">            height: 100px;</div><div class="line">            background-color: orangered;</div><div class="line">            /*在低版本的ie中,如果想要显示h5的新语义标签,需要设置为block*/</div><div class="line">            display: block;</div><div class="line">        &#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"></div><div class="line">   <span class="comment">&lt;!--使用js框架来解决html5新语义标签的方法--&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/html5shiv.min.js"</span>&gt;</span><span class="undefined"></span></div><div class="line">   <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--</span></div><div class="line">    在老版本的ie中无法查看(ie8)</div><div class="line">--&gt;</div><div class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/01/19/04.H5新语义标签兼容性/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/17/hello-world/">Hello World</a>
-    </h1>
+    <div class="duoshuo"></div>
   
 
-        
-        <a href="/2017/01/17/hello-world/" class="archive-article-date">
-  	<time datetime="2017-01-17T03:12:38.648Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/01/17/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/01/11/">区别</a>
-    </h1>
-  
-
-        
-        <a href="/2016/01/01/11/" class="archive-article-date">
-  	<time datetime="2015-12-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-01-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p># </p>
-<h2 id="IDE和编辑器的区别"><a href="#IDE和编辑器的区别" class="headerlink" title="IDE和编辑器的区别"></a>IDE和编辑器的区别</h2><h3 id="IDE是集成开发环境-工作中常用的开发环境webstrom-Dreamwear-等"><a href="#IDE是集成开发环境-工作中常用的开发环境webstrom-Dreamwear-等" class="headerlink" title="IDE是集成开发环境 工作中常用的开发环境webstrom Dreamwear 等"></a>IDE是集成开发环境 工作中常用的开发环境webstrom Dreamwear 等</h3>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/01/01/11/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-DOCTYPE的作用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/01/DOCTYPE的作用/">DOCTYPE标签</a>
-    </h1>
-  
-
-        
-        <a href="/2015/01/01/DOCTYPE的作用/" class="archive-article-date">
-  	<time datetime="2014-12-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-01-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="DOCTYPE的作用"><a href="#DOCTYPE的作用" class="headerlink" title="DOCTYPE的作用"></a>DOCTYPE的作用</h2><blockquote>
-<p>一个标准的<code>HTML</code>文档，开头第一句都应该是<code>&lt;!DOCTYPE&gt;</code>,根据<code>HTML</code>版本的不同，写法上有所差别<br>[TOC]</p>
-<ul>
-<li><strong>tips:</strong><ul>
-<li><code>DOCTYPE</code>并不是<code>HTML</code>标签,而是一个<code>声明</code></li>
-<li>作用是：告诉浏览器按照哪个规则去解析页面</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p>##DOCTYPE写法_HTML4中</p>
-<blockquote>
-<p>随着技术更新，目前很少使用，在有些老的网站可以见到</p>
-</blockquote>
-<ul>
-<li><p><strong>1.HTML4.01 Strict</strong><br><strong>Emmet语法为:</strong>html:4s <code>tab</code></p>
-</li>
-<li><p><strong>2.HTML4.01 Transitional</strong><br><strong>Emmet语法为:</strong>html:4t <code>tab</code></p>
-<p>​<br>##DOCTYPE写法_HTML中<br><strong>Emmet语法为:</strong><code>html:5</code>  <code>+tab</code></p>
-</li>
-</ul>
-<p>##Emmet语法创建文档结构</p>
-<ul>
-<li><code>html:5</code>或者<code>!</code>:HTML5文档类型</li>
-<li><code>html:xt</code>:XHTML过度型文档类型</li>
-<li><code>html:xs</code>:XHTML严格型文档类型</li>
-<li><code>html:4t</code>:HTML4过度型文档类型<br><img src="../images/q.jpg" alt="前端与移动开发学院"></li>
-<li><code>html:4s</code>:HTML4严格型文档类型</li>
-</ul>
-<p>#DOCTYPE编码</p>
-<blockquote>
-<p>在<code>HTML4.01</code>中对于编码格式要求较高，但是在<code>HTML</code>中比较简洁</p>
-</blockquote>
-<p>#新的语义标签</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/01/01/DOCTYPE的作用/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-  
 
 
           </div>
@@ -1390,8 +1079,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
